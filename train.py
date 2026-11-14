@@ -64,7 +64,7 @@ def train_model(df):
 
     train_dicts = df_full_train[categorical + numerical].to_dict(orient ='records')
     test_dicts =df_test[categorical + numerical].to_dict(orient ='records')
-  pipeline = make_pipeline(
+    pipeline = make_pipeline(
         DictVectorizer(sparse=False),
         XGBRegressor(
             n_estimators=140,
