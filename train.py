@@ -64,15 +64,15 @@ def train_model(df):
 
     train_dicts = df_full_train[categorical + numerical].to_dict(orient ='records')
     test_dicts =df_test[categorical + numerical].to_dict(orient ='records')
-   pipeline = make_pipeline(
+  pipeline = make_pipeline(
         DictVectorizer(sparse=False),
         XGBRegressor(
-            n_estimators=200,
-            learning_rate=0.05,
-            max_depth=6,
-            min_child_weight=5,
-            subsample=0.8,
-            colsample_bytree=0.8,
+            n_estimators=140,
+            learning_rate=0.01,
+            max_depth=10,
+            min_child_weight=1,
+            subsample=0.7,
+            colsample_bytree=0.9,
             objective='reg:squarederror',
             random_state=42,
             n_jobs=-1
