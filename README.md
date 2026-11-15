@@ -1,4 +1,4 @@
-markdown
+
 # Used Motorcycle Selling Price Prediction
 
 ## 1. Problem Description
@@ -85,8 +85,8 @@ The project uses the following core packages (listed in `requirements.txt`):
 
 #### 1. Clone the Repository
 ```bash
-git clone https://github.com<your-username>/<your-repo-name>.git
-cd <your-repo-name>
+git clone https://github.com/oscanx/Motorcycle-price.git
+cd <Motorcycle-price>
 ```
 
 #### 2. Create and Activate a Virtual Environment
@@ -183,7 +183,7 @@ fly auth login
 fly launch
 ```
 *(Note: Ensure `internal_port = 9696` is configured inside the generated `fly.toml` file before deploying.)*
-Use code with caution.
+*(Note also:  Deployment and containerization segment were developed more with Google Gemini AI assistant )*
 
 
 
